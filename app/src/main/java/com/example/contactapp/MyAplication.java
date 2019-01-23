@@ -2,10 +2,10 @@ package com.example.contactapp;
 
 import java.util.ArrayList;
 
-public class Super extends ArrayList<Contact> {
+public class MyAplication extends ArrayList<Contact> {
     ArrayList<Contact> contacts;
 
-    public Super() {
+    public MyAplication() {
         this.contacts = new ArrayList<Contact>();
     }
 

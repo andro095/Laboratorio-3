@@ -3,6 +3,7 @@
     package="com.example.contactapp">
 
     <application
+        android:name=".MyAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -18,8 +19,13 @@
         </activity>
         <activity
             android:name=".makeContact"
-            android:label="@string/makeContact"
-            ></activity>
+            android:label="@string/makeContact" />
+        <activity
+            android:name=".showContact"
+            android:label="@string/showContact"></activity>
+        <activity
+            android:name=".makeMail"
+            android:label="@string/makeMail"></activity>
     </application>
 
 </manifest>
