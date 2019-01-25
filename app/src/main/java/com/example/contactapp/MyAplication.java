@@ -1,24 +1,7 @@
 package com.example.contactapp;
 
-import java.util.ArrayList;
+import android.app.Application;
 
-public class MyAplication extends ArrayList<Contact> {
-    ArrayList<Contact> contacts;
-
-    public MyAplication() {
-        this.contacts = new ArrayList<Contact>();
-    }
-
-    @Override
-    public boolean add(Contact s) {
-        return contacts.add(s);
-    }
-
-    @Override
-    public Contact get(int index) {
-        return contacts.get(index);
-    }
-    public ArrayList<Contact> getContactos (){
-        return contacts;
-    }
+public class MyAplication extends Application {
+    MyContacts misContactos = new MyContacts();
 }
