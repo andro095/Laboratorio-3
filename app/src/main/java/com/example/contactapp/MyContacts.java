@@ -13,12 +13,22 @@ public class MyContacts implements iContact{
     }
 
     @Override
-    public String phone(Contact contacto) {
-        return "Se está llamando a: " + contacto.getNombre();
+    public String phone(int numero) {
+        return "Se está llamando al: " + Integer.toString(numero);
     }
 
     @Override
-    public String mail(Contact contacto) {
-        return "Mi nombre es André Rodríguez y mi número es 56998418";
+    public String[] mail(String destinatario) {
+        String[] elementos = {destinatario, "Mi nombre es André Rodríguez y mi número es 56998418"};
+        return elementos;
+    }
+
+    @Override
+    public ArrayList<String> getlistas() {
+        ArrayList<String> result = new ArrayList<String>();
+        for (Contact contact: Contactos) {
+            result.add(contact.getNombre() + " - " + contact.getTelefono());
+        }
+        return result;
     }
 }
